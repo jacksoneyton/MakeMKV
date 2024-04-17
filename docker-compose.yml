@@ -10,4 +10,4 @@ services:
       - "/opt/makemkv/output:/output:rw"
     devices:
       - "/dev/sr0:/dev/sr0"
-      - "/dev/sg2:/dev/sg1"
+      - "/dev/sg1:/dev/sg1"
