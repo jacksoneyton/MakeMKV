@@ -1,0 +1,13 @@
+version: '3'
+services:
+  makemkv:
+    image: jlesage/makemkv
+    ports:
+      - "5800:5800"
+    volumes:
+      - "/opt/makemkv/config:/config:rw"
+      - "/opt/makemkv/storage:/storage:rw"
+      - "/opt/makemkv/output:/output:rw"
+    devices:
+      - "/dev/sr0:/dev/sr0"
+      - "/dev/sg2:/dev/sg2"
